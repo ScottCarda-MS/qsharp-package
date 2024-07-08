@@ -1,5 +1,7 @@
-{ 
-  "author" : "You <sccarda@microsoft.com>", 
-  "files" : [ "src/TestPackage.qs" ], 
-  "packageType": "lib" 
-} 
+{
+  "author": "You <sccarda@microsoft.com>",
+  "files": [
+    "src/TestPackage.qs"
+  ],
+  "packageType": "lib"
+}
