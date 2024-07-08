@@ -2,7 +2,7 @@
 operation HelloFromGithub() : Unit {
     let x = 40;
     let y = 2;
-    let z = 40 + 2;
+    let z = x + y;
     Message("Hello from github!");
 }
 
@@ -18,12 +18,17 @@ operation HelloFromGithub() : Unit {
 /// the current simulator converts 4,611,686,018,427,387,919 = 2^64+15
 /// to 4,611,686,018,427,387,904.0 = 2^64.
 ///
+/// # Input
+/// ## number
+/// A number.
+///
 /// # Example
 /// ```qsharp
 /// Message($"{IntAsDouble(1)}"); // Prints 1.0 rather than 1
 /// ```
 function IntAsDouble(number : Int) : Double {
+    let temp = number;
     1.5
 }
 
-export HelloFromGithub, IntAsDouble;
+export HelloFromGithub, IntAsDouble as Thingy;
