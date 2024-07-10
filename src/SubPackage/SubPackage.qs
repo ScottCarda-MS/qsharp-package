@@ -1,4 +1,4 @@
-operation Hello() : Unit {
+function Hello() : Unit {
     Message("Hello from sub package");
 }
 

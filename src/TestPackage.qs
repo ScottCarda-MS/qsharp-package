@@ -1,5 +1,5 @@
 /// This is a Doc String!
-operation HelloFromGithub() : Unit {
+function HelloFromGithub() : Unit {
     let x = 40;
     let y = 2;
     let z = x + y;
@@ -33,6 +33,6 @@ function IntAsDouble(number : Int) : Double {
 
 export HelloFromGithub, IntAsDouble as Thingy;
 
-// import SubPackage.SubPackage.Hello;
+import SubPackage.SubPackage.Hello;
 
-// export Hello;
+export Hello;
