@@ -2,4 +2,4 @@ function Hello() : Unit {
     Message("Hello from sub package");
 }
 
-export Hello;
+export Hello as SubHello;

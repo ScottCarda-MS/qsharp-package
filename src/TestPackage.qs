@@ -1,9 +1,17 @@
+import Microsoft.Quantum.Measurement.MResetZ as MRZ;
+
 /// This is a Doc String!
-function HelloFromGithub() : Unit {
+operation HelloFromGithub() : Unit {
     let x = 40;
     let y = 2;
     let z = x + y;
+
+    use q = Qubit();
+    H(q);
+    MRZ(q);
+
     Message("Hello from github!");
+    SubHello();
 }
 
 /// # Summary
@@ -33,6 +41,6 @@ function IntAsDouble(number : Int) : Double {
 
 export HelloFromGithub, IntAsDouble as Thingy;
 
-import SubPackage.SubPackage.Hello;
+import SubPackage.SubPackage.Hello as SubHello;
 
-export Hello;
+//export Hello;
