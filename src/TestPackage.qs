@@ -1,5 +1,12 @@
 import Microsoft.Quantum.Measurement.MResetZ as MRZ;
 
+export HelloFromGithub, IntAsDouble, Mapped as Thingy;
+
+import SubPackage.SubPackage.Hello as SubHello2;
+import SubPackage.SubPackage.Hello;
+
+//export Hello;
+
 /// This is a Doc String!
 operation HelloFromGithub() : Unit {
     let x = 40;
@@ -11,7 +18,9 @@ operation HelloFromGithub() : Unit {
     MRZ(q);
 
     Message("Hello from github!");
-    SubHello();
+    Hello();
+    Hello();
+    Hello();
 }
 
 /// # Summary
@@ -39,8 +48,32 @@ function IntAsDouble(number : Int) : Double {
     1.5
 }
 
-export HelloFromGithub, IntAsDouble as Thingy;
-
-import SubPackage.SubPackage.Hello as SubHello;
-
-//export Hello;
+/// # Summary
+/// Given an array and a function that is defined
+/// for the elements of the array, returns a new array that consists
+/// of the images of the original array under the function.
+///
+/// # Type Parameters
+/// ## 'T
+/// The type of `array` elements.
+/// ## 'U
+/// The result type of the `mapper` function.
+///
+/// # Input
+/// ## mapper
+/// A function from `'T` to `'U` that is used to map elements.
+/// ## array
+/// An array of elements over `'T`.
+///
+/// # Output
+/// An array `'U[]` of elements that are mapped by the `mapper` function.
+///
+/// # See Also
+/// - Microsoft.Quantum.Arrays.ForEach
+function Mapped<'T, 'U>(mapper : ('T -> 'U), array : 'T[]) : 'U[] {
+    mutable mapped = [];
+    for element in array {
+        set mapped += [mapper(element)];
+    }
+    mapped
+}
