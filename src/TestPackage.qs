@@ -33,6 +33,6 @@ function IntAsDouble(number : Int) : Double {
 
 export HelloFromGithub, IntAsDouble as Thingy;
 
-import SubPackage.SubPackage.Hello;
+// import SubPackage.SubPackage.Hello;
 
-export Hello;
+// export Hello;
