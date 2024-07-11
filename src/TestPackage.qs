@@ -6,6 +6,7 @@ import SubPackage.SubPackage.Hello as SubHello2;
 import SubPackage.SubPackage.Hello;
 
 //export Hello;
+export SubHello2;
 
 /// This is a Doc String!
 operation HelloFromGithub() : Unit {
