@@ -3,10 +3,11 @@ import Microsoft.Quantum.Measurement.MResetZ as MRZ;
 export HelloFromGithub, IntAsDouble, Mapped as Thingy;
 
 import SubPackage.SubPackage.Hello as SubHello2;
-import SubPackage.SubPackage.Hello;
+//import SubPackage.SubPackage.Hello;
+//import SubPackage.SubPackage.SubHello;
 
-export Hello;
-//export SubHello2;
+//export Hello;
+export SubHello2;
 
 function NewThing() : Unit {}
 
@@ -21,9 +22,9 @@ operation HelloFromGithub() : Unit {
     MRZ(q);
 
     Message("Hello from github!");
-    Hello();
-    Hello();
-    Hello();
+    SubHello2();
+    SubHello2();
+    SubHello2();
 }
 
 /// # Summary
