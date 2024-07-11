@@ -8,6 +8,8 @@ import SubPackage.SubPackage.Hello;
 export Hello;
 //export SubHello2;
 
+function NewThing() : Unit {}
+
 /// This is a Doc String!
 operation HelloFromGithub() : Unit {
     let x = 40;
