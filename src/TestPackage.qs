@@ -9,8 +9,6 @@ import SubPackage.SubPackage.Hello as SubHello2;
 
 export HelloFromGithub, IntAsDouble, SubHello2, Mapped as Thingy;
 
-function NewThing() : Unit {}
-
 /// This is a Doc String!
 operation HelloFromGithub() : Unit {
     let x = 40;
