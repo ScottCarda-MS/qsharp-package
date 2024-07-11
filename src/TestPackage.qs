@@ -1,13 +1,13 @@
 import Microsoft.Quantum.Measurement.MResetZ as MRZ;
 
-export HelloFromGithub, IntAsDouble, Mapped as Thingy;
-
 import SubPackage.SubPackage.Hello as SubHello2;
 //import SubPackage.SubPackage.Hello;
 //import SubPackage.SubPackage.SubHello;
 
 //export Hello;
-export SubHello2;
+//export SubHello2;
+
+export HelloFromGithub, IntAsDouble, SubHello2, Mapped as Thingy;
 
 function NewThing() : Unit {}
 
