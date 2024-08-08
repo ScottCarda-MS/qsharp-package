@@ -1,13 +1,15 @@
 import Microsoft.Quantum.Measurement.MResetZ as MRZ;
 
-import SubPackage.SubPackage.Hello as SubHello2;
+//import SubPackage.SubPackage.Hello as SubHello2;
+import SubPackage.SubPackage.Hello;
+//import SubPackage.SubPackage.SubHello;
 //import SubPackage.SubPackage.Hello;
 //import SubPackage.SubPackage.SubHello;
 
-//export Hello;
-//export SubHello2;
+export Hello;
+export Hello as SubHello2;
 
-export HelloFromGithub, IntAsDouble, SubHello2, Mapped as Thingy;
+//export HelloFromGithub, IntAsDouble, SubHello2, Mapped as Thingy;
 
 /// This is a Doc String!
 operation HelloFromGithub() : Unit {
@@ -18,6 +20,10 @@ operation HelloFromGithub() : Unit {
     use q = Qubit();
     H(q);
     MRZ(q);
+
+    Hello();
+
+    let x = 3.0^1.4;
 
     Message("Hello from github!");
     SubHello2();
