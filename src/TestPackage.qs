@@ -8,6 +8,7 @@ import SubPackage.SubPackage.Hello;
 
 export Hello;
 export Hello as SubHello2;
+export HelloFromGithub;
 
 //export HelloFromGithub, IntAsDouble, SubHello2, Mapped as Thingy;
 
